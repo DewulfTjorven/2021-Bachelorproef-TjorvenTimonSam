@@ -4,12 +4,16 @@ import { useState } from "react";
 
 import style from "./AddGroup.module.css";
 import ContentHeader from "../../../components/ContentHeader/ContentHeader.js";
+import Group from "../../../models/Group";
+import { useStores } from "../../../hooks/useStores";
 
 const AddGroup = () => {
   const [name, setName] = useState("");
+  const { dataStore } = useStores();
 
   const handleSubmit = e => {
     e.preventDefault();
+    new Group({ name, store: dataStore });
   };
 
   return (

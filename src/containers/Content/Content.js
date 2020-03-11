@@ -5,6 +5,7 @@ import { Switch, Route } from "react-router-dom";
 import { ROUTES } from "../../consts";
 import Messages from "./Messages/Messages";
 import GroupDetail from "./GroupDetail/GroupDetail.js";
+import AddGroup from "./AddGroup/AddGroup.js";
 
 const Content = () => {
   return (
@@ -15,6 +16,9 @@ const Content = () => {
         </Route>
         <Route path={ROUTES.groups}>
           <Empty message={"Choos a group on the left"} />
+        </Route>
+        <Route path={ROUTES.addgroup}>
+          <AddGroup />
         </Route>
         <Route path={ROUTES.conversation.path}>
           <Messages />
