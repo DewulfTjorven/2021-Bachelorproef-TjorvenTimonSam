@@ -11,11 +11,14 @@ const Content = () => {
   return (
     <section className={style.container}>
       <Switch>
+        <Route path={ROUTES.users}>
+          <Empty message={"Choose a contact on the left"} />
+        </Route>
         <Route path={ROUTES.groupDetail.path}>
           <GroupDetail />
         </Route>
         <Route path={ROUTES.groups}>
-          <Empty message={"Choos a group on the left"} />
+          <Empty message={"Choose a group on the left"} />
         </Route>
         <Route path={ROUTES.addgroup}>
           <AddGroup />
