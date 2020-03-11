@@ -13,6 +13,7 @@ class User {
     if (!store) {
       throw new Error("voorzie een store");
     }
+    this.store = store;
   }
 
   linkMessage(message) {
