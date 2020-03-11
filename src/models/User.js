@@ -14,6 +14,7 @@ class User {
       throw new Error("voorzie een store");
     }
     this.store = store;
+    this.store.addUser(this);
   }
 
   linkMessage(message) {

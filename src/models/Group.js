@@ -15,6 +15,7 @@ class Group {
       throw new Error("voorzie een store");
     }
     this.store = store;
+    this.store.addGroup(this);
   }
 
   linkMessage(message) {
