@@ -10,6 +10,9 @@ class User {
     if (!avatar) {
       this.avatar = `https://avatars.dicebear.com/v2/avataaars/${this.id}.svg`;
     }
+    if (!store) {
+      throw new Error("voorzie een store");
+    }
   }
 
   linkMessage(message) {

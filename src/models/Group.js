@@ -11,6 +11,9 @@ class Group {
       this.pic = `https://avatars.dicebear.com/v2/identicon/${this.id}.svg`;
     }
     this.users = users;
+    if (!store) {
+      throw new Error("voorzie een store");
+    }
   }
 
   linkMessage(message) {
