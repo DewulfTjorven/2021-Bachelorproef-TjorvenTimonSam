@@ -22,7 +22,7 @@ const GroupDetail = () => {
           <section className={style.section}>
             <h3 className={style.subtitle}>Members</h3>
             <ul className={style.membersList}>
-              {[].map(user => (
+              {group.users.map(user => (
                 <li className={style.member} key={user.id}>
                   {user.name}
                 </li>
