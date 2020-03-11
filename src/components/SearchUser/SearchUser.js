@@ -5,7 +5,7 @@ import PropTypes from "prop-types";
 import style from "./SearchUser.module.css";
 import { useStores } from "../../hooks/useStores";
 
-const SearchUser = () => {
+const SearchUser = ({ onUserClick }) => {
   const [search, setSearch] = useState("");
   const { dataStore } = useStores();
   return (
@@ -24,7 +24,9 @@ const SearchUser = () => {
       <ul>
         {dataStore.searchUser(search).map(user => (
           <li key={user.id}>
-            <button className={style.button}>+ {user.name}</button>
+            <button className={style.button} onClick={() => onUserClick(user)}>
+              + {user.name}
+            </button>
           </li>
         ))}
       </ul>

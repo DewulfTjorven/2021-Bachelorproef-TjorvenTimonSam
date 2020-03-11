@@ -6,6 +6,7 @@ import { useParams } from "react-router-dom";
 import { useStores } from "../../../hooks/useStores.js";
 import { useObserver } from "mobx-react-lite";
 import Empty from "../../../components/Empty/Empty.js";
+import SearchUser from "../../../components/SearchUser/SearchUser.js";
 
 const GroupDetail = () => {
   const { id } = useParams();
@@ -31,6 +32,7 @@ const GroupDetail = () => {
           </section>
           <section className={style.section}>
             <h3 className={style.subtitle}>Add member</h3>
+            <SearchUser onUserClick={user => group.linkUser(user)} />
           </section>
         </div>
       </>
