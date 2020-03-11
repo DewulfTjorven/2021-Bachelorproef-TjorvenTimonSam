@@ -6,14 +6,18 @@ import style from "./AddGroup.module.css";
 import ContentHeader from "../../../components/ContentHeader/ContentHeader.js";
 import Group from "../../../models/Group";
 import { useStores } from "../../../hooks/useStores";
+import { useHistory } from "react-router-dom";
+import { ROUTES } from "../../../consts";
 
 const AddGroup = () => {
   const [name, setName] = useState("");
   const { dataStore } = useStores();
+  const history = useHistory();
 
   const handleSubmit = e => {
     e.preventDefault();
-    new Group({ name, store: dataStore });
+    const g = new Group({ name, store: dataStore });
+    history.push(ROUTES.groupDetail.to + g.id);
   };
 
   return (
