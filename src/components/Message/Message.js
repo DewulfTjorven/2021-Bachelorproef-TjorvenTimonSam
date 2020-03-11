@@ -1,19 +1,24 @@
 import React from "react";
 import styles from "./Message.module.css";
 import PropTypes from "prop-types";
+import { useStores } from "../../hooks/useStores";
+import { useObserver } from "mobx-react-lite";
 
 const Message = ({ message }) => {
-  return (
+  const { uiStore } = useStores();
+  return useObserver(() => (
     <li
       onClick={() => message.setUnread(false)}
-      className={message.user === true ? styles.right : styles.left}
+      className={
+        message.user === uiStore.currentUser ? styles.right : styles.left
+      }
     >
-      {message.user !== true && (
+      {message.user !== uiStore.currentUser && (
         <p className={styles.user}>{message.user.name}</p>
       )}
       <p className={message.unread ? styles.unread : ""}>{message.content}</p>
     </li>
-  );
+  ));
 };
 
 Message.propTypes = {
