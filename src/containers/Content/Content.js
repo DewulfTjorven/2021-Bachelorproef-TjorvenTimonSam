@@ -9,6 +9,9 @@ const Content = () => {
   return (
     <section className={style.container}>
       <Switch>
+        <Route path={ROUTES.groups}>
+          <Empty message={"Choos a group on the left"} />
+        </Route>
         <Route path={ROUTES.conversation.path}>
           <Messages />
         </Route>
