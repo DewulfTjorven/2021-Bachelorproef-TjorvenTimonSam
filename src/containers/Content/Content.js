@@ -5,14 +5,22 @@ import { Switch, Route } from "react-router-dom";
 import { ROUTES } from "../../consts";
 import Messages from "./Messages/Messages";
 import GroupDetail from "./GroupDetail/GroupDetail.js";
+import UserDetail from "./UserDetail/UserDetail.js";
 import AddGroup from "./AddGroup/AddGroup.js";
+import AddUser from "./AddUser/AddUser.js";
 
 const Content = () => {
   return (
     <section className={style.container}>
       <Switch>
+        <Route path={ROUTES.userDetail.path}>
+          <UserDetail />
+        </Route>
         <Route path={ROUTES.users}>
           <Empty message={"Choose a contact on the left"} />
+        </Route>
+        <Route path={ROUTES.adduser}>
+          <AddUser />
         </Route>
         <Route path={ROUTES.groupDetail.path}>
           <GroupDetail />
