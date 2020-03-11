@@ -16,6 +16,9 @@ class Group {
     }
     this.store = store;
     this.store.addGroup(this);
+    this.users.forEach(user => {
+      user.linkGroup(this);
+    });
   }
 
   linkMessage(message) {
