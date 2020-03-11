@@ -1,20 +1,28 @@
-import React from "react";
+import React, { useState } from "react";
 
 import PropTypes from "prop-types";
 
 import style from "./SearchUser.module.css";
+import { useStores } from "../../hooks/useStores";
 
 const SearchUser = () => {
+  const [search, setSearch] = useState("");
+  const { dataStore } = useStores();
   return (
     <div className={style.container}>
       <form>
         <label className={style.label}>
           <span>Search</span>
-          <input className={style.input} type="search" />
+          <input
+            className={style.input}
+            type="search"
+            value={search}
+            onChange={e => setSearch(e.target.value)}
+          />
         </label>
       </form>
       <ul>
-        {[].map(user => (
+        {dataStore.searchUser(search).map(user => (
           <li key={user.id}>
             <button className={style.button}>+ {user.name}</button>
           </li>
