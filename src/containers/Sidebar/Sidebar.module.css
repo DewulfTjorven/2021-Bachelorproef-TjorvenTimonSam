@@ -1,24 +1,73 @@
 @value tokens: "../../styles/tokens.module.css";
-@value colorPrimary, spacer1, solight from tokens;
+@value colorPrimary, darkPrimary, fontSizeMedium, background, spacer1, borderRadius from tokens;
 
 .container {
-  composes: container from "../../styles/layouts.module.css";
-}
-
-.header {
-  background-color: colorPrimary;
+  height: 100vh;
+  width: 25%;
   display: flex;
-  flex-flow: column;
-  justify-content: space-around;
+  justify-content: space-between;
+  flex-direction: column;
   padding: spacer1;
+  border-right: solid 3px rgba(22, 23, 29, 0.05);
 }
 
 .title {
-  composes: title1 from "../../styles/typo.module.css";
-  color: solight;
+  composes: title from "../../styles/typo.module.css";
+  color: colorPrimary;
 }
 
-.unread {
-  composes: largeText from "../../styles/typo.module.css";
-  color: solight;
+.navigation {
+  height: 50%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding-top: spacer2;
 }
+
+.bottomNavigation {
+  height: 20%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.navItem{
+  width: 20rem;
+  padding: calc(spacer1 / 2);
+  display: flex;
+  font-size: fontSizeMedium;
+  align-items: center;
+  font-weight: bold;
+  color: darkPrimary;
+}
+
+.navItem__active{
+  width: 20rem;
+  background-color: colorPrimary;
+  border-radius: borderRadius;
+  font-size: fontSizeMedium;
+  font-weight: bold;
+  color: white;
+  fill: white;
+}
+
+.navText{
+  padding-left: 2rem;
+}
+
+.navItem_minimalised{
+  width: 2rem;
+  height: 10rem;  
+  display: flex;
+  padding: calc(spacer1 / 2);
+  font-size: fontSizeMedium;
+  align-items: center;
+  font-weight: bold;
+  color: darkPrimary;  
+}
+
+.navItem__minimalised p{
+  display: none;
+  
+}
+

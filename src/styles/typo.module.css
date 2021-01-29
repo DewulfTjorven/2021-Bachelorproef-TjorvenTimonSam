@@ -1,7 +1,7 @@
 @value tokens: "./tokens.module.css";
 @value fontSizeLarge, fontSizeMedium, background, spacer1 from tokens;
 
-.title1 {
+.title {
   font-size: fontSizeLarge;
   font-weight: bold;
 }

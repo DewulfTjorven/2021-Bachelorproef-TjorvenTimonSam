@@ -1,14 +1,17 @@
-@value colorPrimary: #00bcd4;
-@value darkPrimary: #028494;
+@value colorPrimary: #FF9E45;
+@value darkPrimary: #3C3E4B;
 @value colorBubbleMe: #bdbdbd;
 @value background: #cfd8dc;
 @value hover: #eee;
 @value solight: whitesmoke;
 @value notblack: darkslategrey;
 
-@value spacer1: 1rem;
+@value spacer1: 3rem;
 @value spacer2: 1.5rem;
 @value spacerLarge: 6rem;
 
 @value fontSizeMedium: 1.8rem;
 @value fontSizeLarge: 3rem;
+
+@value borderRadius: 1rem;
+
