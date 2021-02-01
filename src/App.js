@@ -38,8 +38,5 @@ export default App;
 
       {/* hello */}
 
-<<<<<<< HEAD
       {/* Tjorven */}
-=======
       {/* Timon */}
->>>>>>> d9136edd8d29e5aa538ff891d2f84112b1577030
