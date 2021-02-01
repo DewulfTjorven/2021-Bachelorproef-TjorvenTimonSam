@@ -37,10 +37,3 @@ function App() {
 
 export default App;
 
-// finally
-
-<<<<<<< HEAD
-// finally tjorven
-=======
-// push nog iets
->>>>>>> fd0b5709dfc961db1afe2d4119ec99e51ba28ab9
