@@ -1,0 +1,64 @@
+@value tokens: "../../styles/tokens.module.css";
+@value colorPrimary, darkPrimary, fontSizeMedium, background, spacer1, borderRadius, colorGrey from tokens;
+
+.container {
+  height: 100%;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  height: 50%;
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.startOption{
+  width: 100%;
+  background-color: colorGrey;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: spacer1;
+  border-radius: borderRadius;
+}
+
+.text{
+  composes: text from "../../styles/typo.module.css";
+}
+
+.span{
+  composes: span from "../../styles/typo.module.css";
+}
+
+.title {
+  composes: title from "../../styles/typo.module.css";
+  color: colorPrimary;
+}
+
+.title__small {
+  composes: title__small from "../../styles/typo.module.css";
+  color: darkPrimary;
+}
+
+.startImage{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 80%;
+  z-index: -900;
+}
+
+.rect{
+  width: 30%;
+  height: 100vh;
+  background-color: rgba(255, 136, 27, 0.2);
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -999;
+}

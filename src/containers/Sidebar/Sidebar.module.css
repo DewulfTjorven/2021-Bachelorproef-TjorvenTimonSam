@@ -5,8 +5,8 @@
   height: 100vh;
   width: 25%;
   display: flex;
-  justify-content: space-between;
   flex-direction: column;
+  justify-content: space-between;
   padding: spacer1;
   border-right: solid 3px rgba(22, 23, 29, 0.05);
 }
@@ -17,7 +17,6 @@
 }
 
 .navigation {
-  height: 50%;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -25,7 +24,6 @@
 }
 
 .bottomNavigation {
-  height: 20%;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -35,7 +33,7 @@
   width: 20rem;
   padding: calc(spacer1 / 2);
   display: flex;
-  font-size: fontSizeMedium;
+  font-size: fontSizeSmall;
   align-items: center;
   font-weight: bold;
   color: darkPrimary;
@@ -45,7 +43,7 @@
   width: 20rem;
   background-color: colorPrimary;
   border-radius: borderRadius;
-  font-size: fontSizeMedium;
+  font-size: fontSizeSmall;
   font-weight: bold;
   color: white;
   fill: white;

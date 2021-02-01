@@ -1,0 +1,19 @@
+@value tokens: "styles/tokens.module.css";
+@value colorPrimary, darkPrimary, fontSizeMedium, background, spacer1, borderRadius from tokens;
+
+.container{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: spacer1;
+}
+
+.title {
+  composes: title from "styles/typo.module.css";
+  color: colorPrimary;
+}
+
+.button {
+  composes: button from "styles/layouts.module.css";
+}

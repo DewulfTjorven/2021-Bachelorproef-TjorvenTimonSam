@@ -1,0 +1,7 @@
+@value tokens: "../../styles/tokens.module.css";
+@value colorPrimary, darkPrimary, fontSizeMedium, background, spacer1, borderRadius from tokens;
+
+.container{
+  width: 100%;
+  height: 100vh;
+}

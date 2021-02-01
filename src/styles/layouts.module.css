@@ -1,11 +1,5 @@
 @value tokens: "./tokens.module.css";
-@value spacerLarge, spacer1, solight from tokens;
-
-.container {
-  display: grid;
-  grid-template-rows: 8rem 1fr spacerLarge;
-  height: 100vh;
-}
+@value spacerLarge, spacer1, colorPrimary, fontSizeMedium, fontSizeSmall, borderRadius from tokens;
 
 .base {
   display: grid;
@@ -25,4 +19,20 @@
 
 .column {
   padding: spacer1;
+}
+
+.button{
+  width: 24rem;
+  background-color: colorPrimary;
+  font-size: fontSizeSmall;
+  font-weight: bold;
+  padding: calc(spacer1/2);
+  border-radius: borderRadius;
+  color: white;
+  border: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0px 0px 15px rgba(255, 158, 69, 0.6);
+  box-sizing: border-box;
 }

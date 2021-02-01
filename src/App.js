@@ -1,12 +1,37 @@
 import React from "react";
 
-import Sidebar from "./containers/Sidebar/Sidebar";
+import { Switch, Route } from "react-router-dom";
+import { ROUTES } from "./consts";
+
+import StartHeader from "./components/StartHeader/StartHeader";
+import Start from "./components/Start/Start";
+
+import style from "./App.module.css";
+
 
 function App() {
   return (
-    <>
-      <Sidebar />
-    </>
+      <Switch>
+        <Route exact path={ROUTES.home}>
+          <section className={style.container}>
+            <StartHeader />
+            <Start />
+          </section>
+        </Route>
+
+        <Route exact path={ROUTES.bewonerlogin}>
+          <section className={style.container}>
+            <StartHeader />
+          </section>
+        </Route>
+
+        <Route exact path={ROUTES.adminlogin}>
+          <section className={style.container}>
+            <StartHeader />
+          </section>
+        </Route>
+
+      </Switch>
   );
 }
 

@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React from "react";
 
 import { NavLink } from "react-router-dom";
 import { ROUTES } from "../../consts";
@@ -10,7 +10,6 @@ import { ReactComponent as MediaLogo } from "./media.svg";
 import { ReactComponent as SignaalLogo } from "./signaal.svg";
 import { ReactComponent as UpdatesLogo } from "./updates.svg";
 import { ReactComponent as UserlistLogo } from "./userlist.svg";
-import { ReactComponent as UitklappenLogo } from "./inklappen.svg";
 import { ReactComponent as UitloggenLogo } from "./uitloggen.svg";
 
 
@@ -19,11 +18,6 @@ import style from "./Sidebar.module.css";
 
 const Sidebar = () => {
 
-  const [isActive, setActive] = useState(false);
-
-  const toggleClass = () => {
-    setActive(!isActive);
-  };
 
   return (
     <section className={style.container}>
@@ -32,50 +26,44 @@ const Sidebar = () => {
       </header>
       <section className={style.navigation}>
         
-        <NavLink className={isActive ? style.navItem__minimalised : style.navItem} activeClassName={style.navItem__active} to={ROUTES.overzicht}>
+        <NavLink className={style.navItem} activeClassName={style.navItem__active} to={ROUTES.overzicht}>
          <PreviewLogo />
           <p className={style.navText}>Overzicht</p>
         </NavLink>
 
-        <NavLink className={isActive ? style.navItem__minimalised : style.navItem} activeClassName={style.navItem__active} to={ROUTES.activiteiten}>
+        <NavLink className={style.navItem} activeClassName={style.navItem__active} to={ROUTES.activiteiten}>
           <ActiviteitenLogo />
           <p className={style.navText}>Activiteiten</p>
         </NavLink>
 
-        <NavLink className={isActive ? style.navItem__minimalised : style.navItem} activeClassName={style.navItem__active} to={ROUTES.menu}>
+        <NavLink className={style.navItem} activeClassName={style.navItem__active} to={ROUTES.menu}>
           <MenuLogo />
           <p className={style.navText}>Menu</p>
         </NavLink>
 
-        <NavLink className={isActive ? style.navItem__minimalised : style.navItem} activeClassName={style.navItem__active} to={ROUTES.media}>
+        <NavLink className={style.navItem} activeClassName={style.navItem__active} to={ROUTES.media}>
           <MediaLogo />
           <p className={style.navText}>Media</p>
         </NavLink>
 
-        <NavLink className={isActive ? style.navItem__minimalised : style.navItem} activeClassName={style.navItem__active} to={ROUTES.signaal}>
+        <NavLink className={style.navItem} activeClassName={style.navItem__active} to={ROUTES.signaal}>
           <SignaalLogo />
           <p className={style.navText}>Signaal</p>
         </NavLink>
 
-        <NavLink className={isActive ? style.navItem__minimalised : style.navItem} activeClassName={style.navItem__active} to={ROUTES.updates}>
+        <NavLink className={style.navItem} activeClassName={style.navItem__active} to={ROUTES.updates}>
           <UpdatesLogo />
           <p className={style.navText}>Meldingen</p>
         </NavLink>
 
-        <NavLink className={isActive ? style.navItem__minimalised : style.navItem} activeClassName={style.navItem__active} to={ROUTES.userlist}>
+        <NavLink className={style.navItem} activeClassName={style.navItem__active} to={ROUTES.userlist}>
           <UserlistLogo />
           <p className={style.navText}>Gebruikers</p>
         </NavLink>
       </section>
 
       <section className={style.bottomNavigation}>
-        <section className={isActive ? style.navItem__minimalised : style.navItem}
-          onClick={toggleClass} 
-        >
-          <UitklappenLogo />
-          <p className={style.navText}>Inklappen</p>
-        </section>
-        <NavLink className={isActive ? style.navItem__minimalised : style.navItem} to={ROUTES.uitloggen}>
+        <NavLink className={style.navItem} to={ROUTES.uitloggen}>
           <UitloggenLogo />
           <p className={style.navText}>Uitloggen</p>
         </NavLink>
