@@ -5,6 +5,8 @@ import { ROUTES } from "./consts";
 
 import StartHeader from "./components/StartHeader/StartHeader";
 import Start from "./components/Start/Start";
+import BewonerLogin from "./components/BewonerLogin/BewonerLogin";
+
 
 import style from "./App.module.css";
 
@@ -22,6 +24,7 @@ function App() {
         <Route exact path={ROUTES.bewonerlogin}>
           <section className={style.container}>
             <StartHeader />
+            <BewonerLogin />
           </section>
         </Route>
 
@@ -35,11 +38,3 @@ function App() {
 }
 
 export default App;
-
-      {/* hello */}
-
-<<<<<<< HEAD
-      {/* Tjorven */}
-=======
-      {/* Timon */}
->>>>>>> d9136edd8d29e5aa538ff891d2f84112b1577030
