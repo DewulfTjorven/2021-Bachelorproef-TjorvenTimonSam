@@ -38,11 +38,3 @@ function App() {
 }
 
 export default App;
-<<<<<<< HEAD
-=======
-
-      {/* hello */}
-
-      {/* Tjorven */}
-      {/* Timon */}
->>>>>>> 940e81b8e473412e7db00213ff18af536f931787
