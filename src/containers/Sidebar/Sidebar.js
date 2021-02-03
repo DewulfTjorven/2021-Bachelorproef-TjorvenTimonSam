@@ -1,15 +1,15 @@
 import React from "react";
 
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { ROUTES } from "../../consts";
 
 import { ReactComponent as PreviewLogo } from "./preview.svg";
 import { ReactComponent as ActiviteitenLogo } from "./activiteiten.svg";
-import { ReactComponent as MenuLogo } from "./menu.svg";
-import { ReactComponent as MediaLogo } from "./media.svg";
-import { ReactComponent as SignaalLogo } from "./signaal.svg";
-import { ReactComponent as UpdatesLogo } from "./updates.svg";
-import { ReactComponent as UserlistLogo } from "./userlist.svg";
+// import { ReactComponent as MenuLogo } from "./menu.svg";
+// import { ReactComponent as MediaLogo } from "./media.svg";
+// import { ReactComponent as SignaalLogo } from "./signaal.svg";
+// import { ReactComponent as UpdatesLogo } from "./updates.svg";
+// import { ReactComponent as UserlistLogo } from "./userlist.svg";
 import { ReactComponent as UitloggenLogo } from "./uitloggen.svg";
 
 
@@ -26,47 +26,22 @@ const Sidebar = () => {
       </header>
       <section className={style.navigation}>
         
-        <NavLink className={style.navItem} activeClassName={style.navItem__active} to={ROUTES.overzicht}>
+        <Link className={style.navItem} activeClassName={style.navItem__active} to={ROUTES.overzicht}>
          <PreviewLogo />
           <p className={style.navText}>Overzicht</p>
-        </NavLink>
+        </Link>
 
-        <NavLink className={style.navItem} activeClassName={style.navItem__active} to={ROUTES.activiteiten}>
+        <Link className={style.navItem} activeClassName={style.navItem__active} to={ROUTES.activiteiten}>
           <ActiviteitenLogo />
           <p className={style.navText}>Activiteiten</p>
-        </NavLink>
-
-        <NavLink className={style.navItem} activeClassName={style.navItem__active} to={ROUTES.menu}>
-          <MenuLogo />
-          <p className={style.navText}>Menu</p>
-        </NavLink>
-
-        <NavLink className={style.navItem} activeClassName={style.navItem__active} to={ROUTES.media}>
-          <MediaLogo />
-          <p className={style.navText}>Media</p>
-        </NavLink>
-
-        <NavLink className={style.navItem} activeClassName={style.navItem__active} to={ROUTES.signaal}>
-          <SignaalLogo />
-          <p className={style.navText}>Signaal</p>
-        </NavLink>
-
-        <NavLink className={style.navItem} activeClassName={style.navItem__active} to={ROUTES.updates}>
-          <UpdatesLogo />
-          <p className={style.navText}>Meldingen</p>
-        </NavLink>
-
-        <NavLink className={style.navItem} activeClassName={style.navItem__active} to={ROUTES.userlist}>
-          <UserlistLogo />
-          <p className={style.navText}>Gebruikers</p>
-        </NavLink>
+        </Link>
       </section>
 
       <section className={style.bottomNavigation}>
-        <NavLink className={style.navItem} to={ROUTES.uitloggen}>
+        <Link className={style.navItem} to={ROUTES.uitloggen}>
           <UitloggenLogo />
           <p className={style.navText}>Uitloggen</p>
-        </NavLink>
+        </Link>
       </section>
     </section>
   )

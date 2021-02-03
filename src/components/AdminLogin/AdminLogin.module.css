@@ -29,8 +29,16 @@
   stroke: darkPrimary;
 }
 
-.input{
+.inputContainer{
   width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 40rem;
+}
+
+.input{
+  width: 5rem;
   background-color: #EAEAEA;
   border: none;
   border-radius: borderRadius;
@@ -45,9 +53,8 @@ input {
 
 .inputLabel{
   font-weight: bold;
+  margin-bottom: 2rem
 }
-
-
 
 .inputIcon{
   margin-right: calc(spacer1 / 2);

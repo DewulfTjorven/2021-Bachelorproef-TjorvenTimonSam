@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 import { ROUTES } from "../../consts";
 
 import style from "./BewonerLogin.module.css";
+import Zoom from 'react-reveal/Zoom';
+
 
 import { ReactComponent as ArrowLogo } from "./arrow.svg";
 import { ReactComponent as NaamLogo } from "./naam.svg";
@@ -17,6 +19,7 @@ import StartImage from './bewonerimage.png';
 const BewonerLogin = () => {
   return (
     <section className={style.container}>
+      <Zoom>  
       <section className={style.content}>  
         <Link className={style.backLink} to={ROUTES.home}>
         <ArrowLogo className={style.backArrow} />
@@ -41,8 +44,8 @@ const BewonerLogin = () => {
         <button className={style.buttonUnderline}>
           <u>Ik ben mijn gegevens vergeten</u>
         </button>
-
       </section>
+      </Zoom> 
       <img src={StartImage} className={style.startImage} alt="Logo" />
       <section className={style.rect}></section>
     </section>
