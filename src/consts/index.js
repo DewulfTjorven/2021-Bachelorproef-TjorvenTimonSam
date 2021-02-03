@@ -2,9 +2,9 @@ const ROUTES = {
   home: "/",
   bewonerlogin: "/bewonerlogin",
   adminlogin: "/adminlogin",
-  adminPanel: "/adminpanel",
-  overzicht: "/overzicht",
-  activiteiten: "/activiteiten",
+  adminpanel: "/adminpanel",
+  overzicht: "/adminpanel/overzicht",
+  activiteiten: "/adminpanel/activiteiten",
   uitloggen: "/uitloggen",
 };
 

@@ -8,8 +8,8 @@ import Start from "./components/Start/Start";
 import BewonerLogin from "./components/BewonerLogin/BewonerLogin"
 import AdminLogin from "./components/AdminLogin/AdminLogin";
 
-import Sidebar from "./containers/Sidebar/Sidebar";
-import Content from "./containers/Content/Content";
+import Layout from "./containers/Layout/Layout";
+
 
 
 
@@ -44,13 +44,7 @@ function App() {
         </Route>
 
         <Route exact path={ROUTES.adminPanel}>
-          <section className={style.container}>
-            <section className={style.containerSidebar}>
-              <Sidebar />
-            </section>
-          <section className={style.containerContent}></section>
-            <Content />
-          </section>
+          <Layout />
         </Route>
       </Switch>
   );
