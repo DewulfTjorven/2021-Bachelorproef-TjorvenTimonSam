@@ -4,4 +4,26 @@
 .container{
   width: 100%;
   height: 100vh;
+  padding: spacer1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.contentHeader{
+  width: 100%;
+  height: 15%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.title__small {
+  composes: title__small from "../../styles/typo.module.css";
+  color: darkPrimary;
+}
+
+.clock {
+  composes: title from "../../styles/typo.module.css";
+  color: darkPrimary;
 }

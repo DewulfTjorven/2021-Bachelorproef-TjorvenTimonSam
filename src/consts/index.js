@@ -5,7 +5,11 @@ const ROUTES = {
   adminpanel: "/adminpanel",
   overzicht: "/adminpanel/overzicht",
   activiteiten: "/adminpanel/activiteiten",
-  uitloggen: "/uitloggen",
+  menu: "/adminpanel/menu",
+  media: "/adminpanel/media",
+  signaal: "/adminpanel/signaal",
+  updates: "/adminpanel/updates",
+  userlist: "/uitloggen",
 };
 
 export { ROUTES };

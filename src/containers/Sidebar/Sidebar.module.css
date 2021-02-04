@@ -3,7 +3,7 @@
 
 .container {
   height: 100vh;
-  width: 100%;
+  width: 20%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -17,10 +17,7 @@
 }
 
 .navigation {
-  height: 50%;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
+  height: 60%;
 }
 
 .bottomNavigation {
@@ -30,16 +27,16 @@
 }
 
 .navItem{
-  width: 20rem;
   display: flex;
+  width: auto;
   font-size: fontSizeSmall;
   align-items: center;
   font-weight: bold;
   color: darkPrimary;
+  padding: calc(spacer1 / 2.5);
 }
 
 .navItem__active{
-  width: 20rem;
   background-color: colorPrimary;
   border-radius: borderRadius;
   font-size: fontSizeSmall;
