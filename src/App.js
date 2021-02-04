@@ -8,10 +8,9 @@ import Start from "./components/Start/Start";
 import BewonerLogin from "./components/BewonerLogin/BewonerLogin"
 import AdminLogin from "./components/AdminLogin/AdminLogin";
 
+import BewonerInterface from "./components/BewonerInterface/BewonerInterface"
+
 import Layout from "./containers/Layout/Layout";
-
-
-
 
 
 
@@ -36,6 +35,10 @@ function App() {
           </section>
         </Route>
 
+        <Route exact path={ROUTES.bewonerinterface}>
+          <BewonerInterface />
+        </Route>
+
         <Route exact path={ROUTES.adminlogin}>
           <section className={style.container}>
             <StartHeader />
@@ -46,6 +49,7 @@ function App() {
         <Route exact path={ROUTES.adminPanel}>
           <Layout />
         </Route>
+
       </Switch>
   );
 }

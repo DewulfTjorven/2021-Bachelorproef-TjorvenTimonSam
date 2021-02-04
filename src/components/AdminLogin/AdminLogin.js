@@ -44,7 +44,7 @@ const AdminLogin = () => {
             </section>
         </section>
 
-        <Link className={style.startOption} to={ROUTES.adminPanel}>
+        <Link className={style.startOption} to={ROUTES.adminpanel}>
           <button className={style.button}>
             <p>Inloggen</p>
           </button>

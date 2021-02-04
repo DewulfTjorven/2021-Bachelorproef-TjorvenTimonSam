@@ -1,8 +1,9 @@
 const ROUTES = {
   home: "/",
   bewonerlogin: "/bewonerlogin",
+  bewonerinterface: "/bewonerinterface",
   adminlogin: "/adminlogin",
-  adminpanel: "/adminpanel",
+  adminpanel: "/adminpanel/overzicht",
   overzicht: "/adminpanel/overzicht",
   activiteiten: "/adminpanel/activiteiten",
   menu: "/adminpanel/menu",
@@ -10,6 +11,7 @@ const ROUTES = {
   signaal: "/adminpanel/signaal",
   updates: "/adminpanel/updates",
   userlist: "/uitloggen",
+
 };
 
 export { ROUTES };
