@@ -115,8 +115,9 @@
   position: absolute;
   right: 0;
   bottom: 0;
-  width: 95%;
+  height: 100%;
 }
+
 
 .bewerkenLogo{
   position: absolute;
@@ -151,8 +152,8 @@
   border-radius: borderRadius;
   margin-top: 1rem;
   padding: 1.5rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
   font-weight: bold;
 }
 
@@ -187,4 +188,32 @@
 
 .bold{
   font-weight: bold;
+}
+
+
+
+@media only screen and (max-width: 1120px) {
+  .Image{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 60%;
+  }
+
+  .updateContent{
+    height: 100%;
+    padding: 0.5rem;
+    color: darkPrimary;
+  
+  }
+
+  .updateImportantRed{
+    padding-left: 0.5rem;
+    padding-left: 0.5rem;
+  }
+  
+  .updateImportant{
+    padding-left: 0.5rem;
+    padding-left: 0.5rem;
+  }
 }
