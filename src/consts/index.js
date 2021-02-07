@@ -10,7 +10,7 @@ const ROUTES = {
   media: "/adminpanel/media",
   signaal: "/adminpanel/signaal",
   updates: "/adminpanel/updates",
-  userlist: "/uitloggen",
+  userlist: "/adminpanel/userlist",
 
 };
 

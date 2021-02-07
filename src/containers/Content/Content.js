@@ -5,7 +5,11 @@ import style from "./Content.module.css";
 
 import Overzicht from "../../components/Overzicht/Overzicht";
 import Activiteiten from "../../components/Activiteiten/Activiteiten";
-
+import Menu from "../../components/Menu/Menu";
+import Media from "../../components/Media/Media";
+import Signaal from "../../components/Signaal/Signaal";
+import Updates from "../../components/Updates/Updates";
+import Userlist from "../../components/Userlist/Userlist";
 
 const Content = () => {
 
@@ -24,6 +28,11 @@ const Content = () => {
       <Switch>
         <Route path="/adminpanel/overzicht" exact component={Overzicht}/>
         <Route path="/adminpanel/activiteiten" component={Activiteiten}/>
+        <Route path="/adminpanel/menu" component={Menu}/>
+        <Route path="/adminpanel/media" component={Media}/>
+        <Route path="/adminpanel/signaal" component={Signaal}/>
+        <Route path="/adminpanel/updates" component={Updates}/>
+        <Route path="/adminpanel/userlist" component={Userlist}/>
       </Switch>
     
     </section>

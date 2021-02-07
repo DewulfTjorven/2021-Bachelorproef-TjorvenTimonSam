@@ -66,7 +66,7 @@ const Sidebar = () => {
 
       <section className={style.bottomNavigation}>
 
-      <Link className={style.navItem} to={ROUTES.uitloggen}>
+      <Link className={style.navItem} to={ROUTES.home}>
         <UitloggenLogo />
         <p className={style.navText}>Uitloggen</p>
       </Link>

@@ -1,5 +1,5 @@
 @value tokens: "../../styles/tokens.module.css";
-@value colorPrimary, darkPrimary, fontSizeMedium, background, spacer1, borderRadius from tokens;
+@value colorPrimary, darkPrimary, fontSizeMedium, fontSizeSmall, background, spacer1, borderRadius from tokens;
 
 .container{
   width: 100%;
@@ -11,52 +11,104 @@
 }
 
 .activiteitenCard{
-  background-color: burlywood;
+  background-color: darkPrimary;
   grid-column: 1 / span 2;
   grid-row: 1;
+  border-radius: borderRadius;
+  position: relative;
 }
 
 .menuCard{
   background-color: green;
   grid-column: 1;
   grid-row: 2;
+  border-radius: borderRadius;
+
 }
 
 .mediaCard{
   background-color: yellow;
   grid-column: 2;
   grid-row: 2;
+  border-radius: borderRadius;
+
 }
 
 .updateCard{
   background-color: pink;
   grid-column: 3;
   grid-row: 1 / span 2;
+  border-radius: borderRadius;
+
 }
 
 .weerCard{
   background-color: brown;
   grid-column: 1;
   grid-row: 3;
+  border-radius: borderRadius;
+
 }
 
 .signaalCard{
   background-color: red;
   grid-column: 2;
   grid-row: 3;
+  border-radius: borderRadius;
+
 }
 
 .nieuwsCard{
   background-color: blue;
   grid-column: 3;
   grid-row: 3;
+  border-radius: borderRadius;
+
 }
 
-.title {
+.cardContent{
+  height: 100%;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.cardTitle{
+  color: white;
   composes: title from "../../styles/typo.module.css";
-  color: colorPrimary;
+  font-size: fontSizeSmall;
 }
 
+.activitySpan{
+  background-color: colorPrimary;
+  padding: 0.7rem 1rem 0.7rem 1rem;
+  border-radius: calc(borderRadius / 2);
+  font-size: fontSizeSmall;
+  margin-left: 1rem;
+}
+
+.cardDetail{
+  color: white;
+}
+
+.activity{
+  font-weight: bold;
+  font-size: fontSizeMedium;
+}
+
+.Image{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.bewerkenLogo{
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+}
 
 .button {
   composes: button from "../../styles/layouts.module.css";
