@@ -1,5 +1,5 @@
 @value tokens: "../../styles/tokens.module.css";
-@value colorPrimary, darkPrimary, fontSizeMedium, fontSizeSmall, background, spacer1, borderRadius from tokens;
+@value colorPrimary, darkPrimary, colorOrange, fontSizeMedium, fontSizeSmall, background, spacer1, borderRadius from tokens;
 
 .container{
   width: 100%;
@@ -19,50 +19,55 @@
 }
 
 .menuCard{
-  background-color: green;
+  background-color: colorOrange;
   grid-column: 1;
   grid-row: 2;
   border-radius: borderRadius;
+  position: relative;
 
 }
 
 .mediaCard{
-  background-color: yellow;
+  background-color: colorOrange;
   grid-column: 2;
   grid-row: 2;
   border-radius: borderRadius;
+  position: relative;
 
 }
 
 .updateCard{
-  background-color: pink;
   grid-column: 3;
   grid-row: 1 / span 2;
   border-radius: borderRadius;
+  position: relative;
 
 }
 
 .weerCard{
-  background-color: brown;
+  background-color: colorOrange;
   grid-column: 1;
   grid-row: 3;
   border-radius: borderRadius;
+  position: relative;
 
 }
 
 .signaalCard{
-  background-color: red;
+  background-color: colorOrange;
   grid-column: 2;
   grid-row: 3;
   border-radius: borderRadius;
+  position: relative;
 
 }
 
 .nieuwsCard{
-  background-color: blue;
+  background-color: colorOrange;
   grid-column: 3;
   grid-row: 3;
   border-radius: borderRadius;
+  position: relative;
 
 }
 
@@ -92,6 +97,15 @@
   color: white;
 }
 
+.cardDetail2{
+  padding: 2rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: darkPrimary;
+}
+
 .activity{
   font-weight: bold;
   font-size: fontSizeMedium;
@@ -101,7 +115,7 @@
   position: absolute;
   right: 0;
   bottom: 0;
-  width: 100%;
+  width: 95%;
 }
 
 .bewerkenLogo{
@@ -110,6 +124,67 @@
   top: 1rem;
 }
 
+.bewerkenLogo2{
+  position: absolute;
+  left: 1rem;
+  top: 1rem;
+}
+
 .button {
   composes: button from "../../styles/layouts.module.css";
+}
+
+.updateContent{
+  height: 100%;
+  padding: 2rem;
+  color: darkPrimary;
+
+}
+
+.updateImportantRed{
+  width: 100%;
+  color: red;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: colorOrange;
+  border-radius: borderRadius;
+  margin-top: 1rem;
+  padding: 1.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  font-weight: bold;
+}
+
+.updateImportant{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: colorOrange;
+  border-radius: borderRadius;
+  margin-top: 1rem;
+  padding: 1.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  font-weight: bold;
+}
+
+.arrow{
+  transform: rotate(180deg);
+}
+
+.update{
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.orb{
+  margin-right: 1rem;
+}
+
+.bold{
+  font-weight: bold;
 }

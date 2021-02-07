@@ -8,6 +8,7 @@ const ROUTES = {
   activiteiten: "/adminpanel/activiteiten",
   menu: "/adminpanel/menu",
   media: "/adminpanel/media",
+  weer: "/adminpanel/weer",
   signaal: "/adminpanel/signaal",
   updates: "/adminpanel/updates",
   userlist: "/adminpanel/userlist",
