@@ -12,6 +12,9 @@ import BewonerInterface from "./components/BewonerInterface/BewonerInterface"
 
 import Layout from "./containers/Layout/Layout";
 
+import Greeting from "./components/Greeting/Greeting";
+
+
 
 
 
@@ -36,7 +39,17 @@ function App() {
         </Route>
 
         <Route exact path={ROUTES.bewonerinterface}>
+        <section className={style.container}>
+          <Greeting />
           <BewonerInterface />
+        </section>
+        </Route>
+
+        <Route exact path={ROUTES.bewoneractiviteiten}>
+          <section className={style.container}>
+            <Greeting />
+            <BewonerInterface />
+          </section>
         </Route>
 
         <Route exact path={ROUTES.adminlogin}>

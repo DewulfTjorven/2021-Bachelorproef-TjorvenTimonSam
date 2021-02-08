@@ -1,6 +1,5 @@
 import React from "react";
 
-
 import style from "./Greeting.module.css";
 
 

@@ -39,7 +39,7 @@ const Overzicht = () => {
             </section>
           </section>
 
-          <img src={ActivityImage} className={style.Image} alt="Logo" />
+          <img src={ActivityImage} className={style.ActivityImage} alt="Logo" />
           <Bewerken className={style.bewerkenLogo}/>
 
         </Link>
