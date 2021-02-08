@@ -1,13 +1,15 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { ReactComponent as Help } from "./help.svg";
 import { ROUTES } from "../../consts";
 
 import style from "./Greeting.module.css";
 
-const currentUrl = window.location.href; // url van de pagina
-
 const Greeting = () => {
+
+  const location = useLocation();
+  console.log(location.pathname)
+  
   return (
     <section className={style.contentHeader}>
       <section className={style.contentGreeting}>
@@ -16,8 +18,7 @@ const Greeting = () => {
       </section>
 
       <section>
-        {/* als de current link dit is dan zal hij de knop tonen anders niets */}
-        {currentUrl === "http://localhost:3000/bewonerinterface" ? 
+        {location.pathname === "/bewonerinterface" ? 
         <Link to={ROUTES.hulpvideos}>
           <button className={style.button}>
             <Help />
