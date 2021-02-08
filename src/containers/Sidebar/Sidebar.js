@@ -1,6 +1,6 @@
 import React from "react";
 
-import { NavLink } from "react-router-dom";
+import { Link , NavLink} from "react-router-dom";
 import { ROUTES } from "../../consts";
 
 import { ReactComponent as PreviewLogo } from "./preview.svg";
@@ -17,6 +17,8 @@ import { ReactComponent as UitloggenLogo } from "./uitloggen.svg";
 import style from "./Sidebar.module.css";
 
 const Sidebar = () => {
+
+    
 
 
   return (
@@ -53,20 +55,21 @@ const Sidebar = () => {
 
         <NavLink className={style.navItem} activeClassName={style.navItem__active} to={ROUTES.updates}>
           <UpdatesLogo />
-          <p className={style.navText}>Meldingen</p>
+          <p className={style.navText}>Updates</p>
         </NavLink>
 
         <NavLink className={style.navItem} activeClassName={style.navItem__active} to={ROUTES.userlist}>
           <UserlistLogo />
-          <p className={style.navText}>Gebruikers</p>
+          <p className={style.navText}>Userlist</p>
         </NavLink>
       </section>
 
       <section className={style.bottomNavigation}>
-        <NavLink className={style.navItem} to={ROUTES.uitloggen}>
-          <UitloggenLogo />
-          <p className={style.navText}>Uitloggen</p>
-        </NavLink>
+
+      <Link className={style.navItem} to={ROUTES.home}>
+        <UitloggenLogo />
+        <p className={style.navText}>Uitloggen</p>
+      </Link>
       </section>
     </section>
   )

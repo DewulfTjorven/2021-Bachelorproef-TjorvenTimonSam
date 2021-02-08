@@ -27,3 +27,7 @@
   composes: title from "../../styles/typo.module.css";
   color: darkPrimary;
 }
+
+.button {
+  composes: button from "../../styles/layouts.module.css";
+}

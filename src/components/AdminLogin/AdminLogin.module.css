@@ -1,5 +1,5 @@
 @value tokens: "../../styles/tokens.module.css";
-@value colorPrimary, darkPrimary, fontSizeMedium, background, spacer1, borderRadius, colorGrey from tokens;
+@value colorPrimary, darkPrimary, fontSizeMedium, fontSizeSmall, background, spacer1, borderRadius, colorGrey from tokens;
 
 .container {
   height: 100%;
@@ -10,22 +10,56 @@
 }
 
 .content {
-  height: 30rem;
+  height: 90%;
   width: 70%;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
 }
 
-.startOption{
+.backLink{
+  display: flex;
+  align-items: center;
+  color: darkPrimary;
+  font-weight: bold;
+}
+
+.backArrow{
+  margin-right: calc(spacer1 / 1.5);
+  stroke: darkPrimary;
+}
+
+.inputContainer{
   width: 100%;
-  background-color: colorGrey;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: spacer1;
-  border-radius: borderRadius;
+  width: 40rem;
 }
+
+.input{
+  width: 5rem;
+  background-color: #EAEAEA;
+  border: none;
+  border-radius: borderRadius;
+  padding: calc(spacer1 / 1.5);
+}
+
+input {
+  font-weight: bold;
+  font-size: fontSizeSmall;
+  opacity: 0.6;
+}
+
+.inputLabel{
+  font-weight: bold;
+  margin-bottom: 2rem
+}
+
+.inputIcon{
+  margin-right: calc(spacer1 / 2);
+}
+
 
 .text{
   composes: text from "../../styles/typo.module.css";
@@ -61,4 +95,19 @@
   right: 0;
   bottom: 0;
   z-index: -999;
+}
+
+.button {
+  composes: button from "../../styles/layouts.module.css";
+}
+
+.buttonUnderline{
+  width: auto;
+  font-size: fontSizeSmall;
+  font-weight: bold;
+  color: darkPrimary;
+  border: none;
+  display: flex;
+  justify-content: flex-start;
+  background-color: transparent;
 }

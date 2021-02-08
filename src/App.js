@@ -5,6 +5,18 @@ import { ROUTES } from "./consts";
 
 import StartHeader from "./components/StartHeader/StartHeader";
 import Start from "./components/Start/Start";
+import BewonerLogin from "./components/BewonerLogin/BewonerLogin"
+import AdminLogin from "./components/AdminLogin/AdminLogin";
+
+import BewonerInterface from "./components/BewonerInterface/BewonerInterface"
+
+import Layout from "./containers/Layout/Layout";
+
+import Greeting from "./components/Greeting/Greeting";
+
+
+
+
 
 import style from "./App.module.css";
 
@@ -22,13 +34,33 @@ function App() {
         <Route exact path={ROUTES.bewonerlogin}>
           <section className={style.container}>
             <StartHeader />
+            <BewonerLogin />
+          </section>
+        </Route>
+
+        <Route exact path={ROUTES.bewonerinterface}>
+        <section className={style.container}>
+          <Greeting />
+          <BewonerInterface />
+        </section>
+        </Route>
+
+        <Route exact path={ROUTES.bewoneractiviteiten}>
+          <section className={style.container}>
+            <Greeting />
+            <BewonerInterface />
           </section>
         </Route>
 
         <Route exact path={ROUTES.adminlogin}>
           <section className={style.container}>
             <StartHeader />
+            <AdminLogin />
           </section>
+        </Route>
+
+        <Route exact path={ROUTES.adminPanel}>
+          <Layout />
         </Route>
 
       </Switch>

@@ -1,0 +1,235 @@
+@value tokens: "../../styles/tokens.module.css";
+@value colorPrimary, darkPrimary, colorOrange, fontSizeMedium, fontSizeSmall, background, spacer1, borderRadius from tokens;
+
+.container{
+  width: 100%;
+  height: 80%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: calc(spacer1/2);
+}
+
+.activiteitenCard{
+  background-color: darkPrimary;
+  grid-column: 1 / span 2;
+  grid-row: 1;
+  border-radius: borderRadius;
+  position: relative;
+}
+
+.menuCard{
+  background-color: colorOrange;
+  grid-column: 1;
+  grid-row: 2;
+  border-radius: borderRadius;
+  position: relative;
+
+}
+
+.mediaCard{
+  background-color: colorOrange;
+  grid-column: 2;
+  grid-row: 2;
+  border-radius: borderRadius;
+  position: relative;
+
+}
+
+.updateCard{
+  grid-column: 3;
+  grid-row: 1 / span 2;
+  border-radius: borderRadius;
+  position: relative;
+
+}
+
+.weerCard{
+  background-color: colorOrange;
+  grid-column: 1;
+  grid-row: 3;
+  border-radius: borderRadius;
+  position: relative;
+
+}
+
+.signaalCard{
+  background-color: colorOrange;
+  grid-column: 2;
+  grid-row: 3;
+  border-radius: borderRadius;
+  position: relative;
+
+}
+
+.nieuwsCard{
+  background-color: colorOrange;
+  grid-column: 3;
+  grid-row: 3;
+  border-radius: borderRadius;
+  position: relative;
+
+}
+
+.cardContent{
+  height: 100%;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.cardTitle{
+  color: white;
+  composes: title from "../../styles/typo.module.css";
+  font-size: fontSizeSmall;
+}
+
+.activitySpan{
+  background-color: colorPrimary;
+  padding: 0.7rem 1rem 0.7rem 1rem;
+  border-radius: calc(borderRadius / 2);
+  font-size: fontSizeSmall;
+  margin-left: 1rem;
+}
+
+.cardDetail{
+  color: white;
+}
+
+.cardDetail2{
+  padding: 2rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: darkPrimary;
+}
+
+.activity{
+  font-weight: bold;
+  font-size: fontSizeMedium;
+}
+
+.Image{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+}
+
+
+.bewerkenLogo{
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+}
+
+.bewerkenLogo2{
+  position: absolute;
+  left: 1rem;
+  top: 1rem;
+}
+
+.button {
+  composes: button from "../../styles/layouts.module.css";
+}
+
+.updateContent{
+  height: 100%;
+  padding: 2rem;
+  color: darkPrimary;
+
+}
+
+.updateImportantRed{
+  width: 100%;
+  color: red;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: colorOrange;
+  border-radius: borderRadius;
+  margin-top: 1rem;
+  padding: 1.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  font-weight: bold;
+}
+
+.updateImportant{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: colorOrange;
+  border-radius: borderRadius;
+  margin-top: 1rem;
+  padding: 1.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  font-weight: bold;
+}
+
+.arrow{
+  transform: rotate(180deg);
+}
+
+.update{
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.orb{
+  margin-right: 1rem;
+}
+
+.bold{
+  font-weight: bold;
+}
+
+
+
+@media only screen and (max-width: 1370px) {
+  .Image{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+  }
+
+  .ActivityImage{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+  }
+}
+
+@media only screen and (max-width: 1120px) {
+  .Image{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 80%;
+  }
+
+  .updateContent{
+    height: 100%;
+    padding: 0.5rem;
+    color: darkPrimary;
+  
+  }
+
+  .updateImportantRed{
+    padding-left: 0.5rem;
+    padding-left: 0.5rem;
+  }
+  
+  .updateImportant{
+    padding-left: 0.5rem;
+    padding-left: 0.5rem;
+  }
+}

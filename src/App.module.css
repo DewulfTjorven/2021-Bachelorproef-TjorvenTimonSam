@@ -9,6 +9,20 @@
   padding: spacer1;
 }
 
+.containerSidebar{
+  width: 20%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.containerContent{
+  width: 80%;
+  height: 100vh;
+}
+
+
+
 .title {
   composes: title from "styles/typo.module.css";
   color: colorPrimary;
