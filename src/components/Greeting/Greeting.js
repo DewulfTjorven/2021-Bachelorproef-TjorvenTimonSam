@@ -5,7 +5,7 @@ import { ROUTES } from "../../consts";
 
 import style from "./Greeting.module.css";
 
-
+const currentUrl = window.location.href; // url van de pagina
 
 const Greeting = () => {
   return (
@@ -16,14 +16,14 @@ const Greeting = () => {
       </section>
 
       <section>
-        {ROUTES === ROUTES.bewonerinterface ? 
-        
+        {/* als de current link dit is dan zal hij de knop tonen anders niets */}
+        {currentUrl === "http://localhost:3000/bewonerinterface" ? 
         <Link to={ROUTES.hulpvideos}>
           <button className={style.button}>
             <Help />
             <p>Ik heb hulp nodig</p>
           </button>
-        </Link> : <p></p>}
+        </Link> : null}
               
       </section>
       
