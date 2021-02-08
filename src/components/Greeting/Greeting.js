@@ -17,18 +17,6 @@ const Greeting = () => {
         <h3 className={style.clock}>14:22</h3>
       </section>
     </section>
-
-    <Switch>
-      <Route path="/adminpanel/overzicht" exact component={Overzicht}/>
-      <Route path="/adminpanel/activiteiten" component={Activiteiten}/>
-      <Route path="/adminpanel/menu" component={Menu}/>
-      <Route path="/adminpanel/media" component={Media}/>
-      <Route path="/adminpanel/weer" component={Weer}/>
-      <Route path="/adminpanel/signaal" component={Signaal}/>
-      <Route path="/adminpanel/updates" component={Updates}/>
-      <Route path="/adminpanel/userlist" component={Userlist}/>
-    </Switch>
-  
   </section>
   );
 };

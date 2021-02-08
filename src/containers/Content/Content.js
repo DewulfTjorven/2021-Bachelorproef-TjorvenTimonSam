@@ -18,7 +18,7 @@ const Content = () => {
 
   return (
     <section className={style.container}>
-        <Greeting />
+      <Greeting />
 
       <Switch>
         <Route path="/adminpanel/overzicht" exact component={Overzicht}/>
