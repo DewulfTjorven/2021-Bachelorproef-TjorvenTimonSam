@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import { ReactComponent as Help } from "./help.svg";
 import { ROUTES } from "../../consts";
 
-
 import style from "./Greeting.module.css";
 
 
