@@ -7,7 +7,6 @@ import style from "./Greeting.module.css";
 
 const Greeting = () => {
   return (
-    <section className={style.container}>
     <section className={style.contentHeader}>
       <section className={style.contentGreeting}>
         <h3 className={style.title__small}>Goeiedag</h3>
@@ -17,7 +16,6 @@ const Greeting = () => {
         <h3 className={style.clock}>14:22</h3>
       </section>
     </section>
-  </section>
   );
 };
 
