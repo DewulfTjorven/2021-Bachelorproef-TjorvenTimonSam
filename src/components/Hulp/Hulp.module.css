@@ -13,6 +13,12 @@
   color: colorPrimary;
 }
 
+.video {
+  max-width: 80vw;
+  border: .5rem solid #000;
+  border-radius: .5rem;
+}
+
 
 .button {
   composes: button from "../../styles/layouts.module.css";
