@@ -13,7 +13,6 @@ const ROUTES = {
   updates: "/adminpanel/updates",
   nieuws: "/adminpanel/nieuws",
   userlist: "/adminpanel/userlist",
-  bewonernieuws: "/bewonerinterface/bewonernieuws",
   bewoneractiviteiten: "/bewonerinterface/bewoneractiviteiten",
   bewonermenu: "/bewonerinterface/bewonermenu",
   bewonermedia: "/bewonerinterface/bewonermedia",
