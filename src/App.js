@@ -56,7 +56,36 @@ function App() {
         <Route exact path={ROUTES.bewoneractiviteiten}>
           <section className={style.container}>
             <Greeting />
-            <BewonerInterface />
+          </section>
+        </Route>
+
+        <Route exact path={ROUTES.bewonermenu}>
+          <section className={style.container}>
+            <Greeting />
+          </section>
+        </Route>
+
+        <Route exact path={ROUTES.bewonermedia}>
+          <section className={style.container}>
+            <Greeting />
+          </section>
+        </Route>
+
+        <Route exact path={ROUTES.bewonerweer}>
+          <section className={style.container}>
+            <Greeting />
+          </section>
+        </Route>
+
+        <Route exact path={ROUTES.bewonersignaal}>
+          <section className={style.container}>
+            <Greeting />
+          </section>
+        </Route>
+
+        <Route exact path={ROUTES.bewonernieuws}>
+          <section className={style.container}>
+            <Greeting />
           </section>
         </Route>
 
