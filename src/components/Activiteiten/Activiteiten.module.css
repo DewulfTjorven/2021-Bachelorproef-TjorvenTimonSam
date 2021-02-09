@@ -2,10 +2,8 @@
 @value colorPrimary, darkPrimary, fontSizeMedium, background, spacer1, borderRadius from tokens;
 
 .container{
-  width: 100%;
+  width: auto;
   height: 80%;
-  background-color: blue;
-
 }
 
 .title {

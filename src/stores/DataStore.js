@@ -1,45 +1,25 @@
-import { decorate, observable, action, computed, configure } from "mobx";
-
-configure({ enforceActions: "observed" });
+import {decorate, observable, action} from 'mobx';
 
 class DataStore {
+
   constructor() {
-    this.groups = [];
-    this.users = [];
+    this.activities = [];
   }
 
-  addGroup(group) {
-    this.groups.push(group);
+  addActivity(activity) {
+    this.activities.push(activity);
   }
 
-  addUser(user) {
-    this.users.push(user);
-  }
+  seed(activities) {
+    this.activities = activities;
 
-  searchUser = search =>
-    this.users.filter(user =>
-      user.name.toLowerCase().includes(search.toLowerCase())
-    );
-
-  getGroupById = id => this.groups.find(group => group.id === id);
-
-  getUserById = id => this.users.find(user => user.id === id);
-
-  get unreadLength() {
-    return this.groups.reduce(
-      (total, group) => (total += group.unreadLength),
-      0
-    );
   }
 }
 
 decorate(DataStore, {
-  groups: observable,
-  users: observable,
-  addGroup: action,
-  addUser: action,
+  activities: observable,
+  addActivity: action,
   seed: action,
-  unreadLength: computed
 });
 
 export default DataStore;

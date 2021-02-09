@@ -13,6 +13,8 @@ import BewonerInterface from "./components/BewonerInterface/BewonerInterface"
 import Layout from "./containers/Layout/Layout";
 
 import Greeting from "./components/Greeting/Greeting";
+import Activiteiten from "./components/Activiteiten/Activiteiten";
+
 import Hulp from "./components/Hulp/Hulp";
 
 
@@ -56,6 +58,7 @@ function App() {
         <Route exact path={ROUTES.bewoneractiviteiten}>
           <section className={style.container}>
             <Greeting />
+            <Activiteiten />
           </section>
         </Route>
 
