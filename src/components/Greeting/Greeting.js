@@ -9,7 +9,7 @@ const Greeting = () => {
 
   const location = useLocation();
   console.log(location.pathname)
-  
+
   return (
     <section className={style.contentHeader}>
       <section className={style.contentGreeting}>
@@ -19,7 +19,7 @@ const Greeting = () => {
 
       <section>
         {location.pathname === "/bewonerinterface" ? 
-        <Link to={ROUTES.hulpvideos}>
+        <Link to={ROUTES.hulp}>
           <button className={style.button}>
             <Help />
             <p>Ik heb hulp nodig</p>

@@ -13,6 +13,7 @@ import BewonerInterface from "./components/BewonerInterface/BewonerInterface"
 import Layout from "./containers/Layout/Layout";
 
 import Greeting from "./components/Greeting/Greeting";
+import Hulp from "./components/Hulp/Hulp";
 
 
 
@@ -42,6 +43,13 @@ function App() {
         <section className={style.container}>
           <Greeting />
           <BewonerInterface />
+        </section>
+        </Route>
+
+        <Route exact path={ROUTES.hulp}>
+        <section className={style.container}>
+          <Greeting />
+          <Hulp />
         </section>
         </Route>
 
