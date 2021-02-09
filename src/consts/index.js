@@ -17,6 +17,7 @@ const ROUTES = {
   bewonermedia: "/bewonerinterface/bewonermedia",
   bewonerweer: "/bewonerinterface/bewonerweer",
   bewonersignaal: "/bewonerinterface/bewonersignaal",
+  hulp: "/bewonerinterface/hulp",
 
 };
 
