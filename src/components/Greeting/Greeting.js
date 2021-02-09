@@ -18,7 +18,14 @@ const Greeting = () => {
       </section>
 
       <section>
-        {location.pathname === "/bewonerinterface" ? 
+        {
+        location.pathname === "/bewonerinterface" 
+        || location.pathname === "/bewonerinterface/bewoneractiviteiten" 
+        || location.pathname === "/bewonerinterface/bewonermenu" 
+        || location.pathname === "/bewonerinterface/bewonermedia" 
+        || location.pathname === "/bewonerinterface/bewonerweer" 
+        || location.pathname === "/bewonerinterface/bewonersignaal"
+        || location.pathname === "/bewonerinterface/bewonernieuws" ? 
         <Link to={ROUTES.hulp}>
           <button className={style.button}>
             <Help />
