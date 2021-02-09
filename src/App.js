@@ -7,16 +7,11 @@ import StartHeader from "./components/StartHeader/StartHeader";
 import Start from "./components/Start/Start";
 import BewonerLogin from "./components/BewonerLogin/BewonerLogin"
 import AdminLogin from "./components/AdminLogin/AdminLogin";
-
 import BewonerInterface from "./components/BewonerInterface/BewonerInterface"
-
 import Layout from "./containers/Layout/Layout";
-
 import Greeting from "./components/Greeting/Greeting";
+import Activiteiten from "./components/Activiteiten/Activiteiten";
 import Hulp from "./components/Hulp/Hulp";
-
-
-
 
 
 import style from "./App.module.css";
@@ -56,6 +51,7 @@ function App() {
         <Route exact path={ROUTES.bewoneractiviteiten}>
           <section className={style.container}>
             <Greeting />
+            <Activiteiten />
           </section>
         </Route>
 
@@ -91,12 +87,12 @@ function App() {
 
         <Route exact path={ROUTES.adminlogin}>
           <section className={style.container}>
-            <StartHeader />
+            <Greeting />
             <AdminLogin />
           </section>
         </Route>
 
-        <Route exact path={ROUTES.adminPanel}>
+        <Route path={ROUTES.adminPanel}>
           <Layout />
         </Route>
 

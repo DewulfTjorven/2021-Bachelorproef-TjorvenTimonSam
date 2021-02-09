@@ -2,7 +2,7 @@ import React from 'react';
 import Content from "../Content/Content";
 import Sidebar from "../Sidebar/Sidebar";
 
-function Layout(props) {
+function Layout() {
     return (
         <>
                 <Sidebar/>
