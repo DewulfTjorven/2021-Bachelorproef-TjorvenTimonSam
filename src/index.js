@@ -15,9 +15,7 @@ export const storeContext = createContext(store);
 window.store = store;
 
 const activities = [];
-
 activities.push(new Activity({date: '12/02/2021', title: 'Ping Pong', description: 'Jan, Patrick en nog 3 andere doen mee aan deze activiteit.', location: 'Floor 2', time: '14:30'}));
-
 // stopt orders in store
 store.dataStore.seed(activities)
 

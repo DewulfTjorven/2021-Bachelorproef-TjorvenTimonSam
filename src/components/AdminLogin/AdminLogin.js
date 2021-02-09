@@ -5,8 +5,6 @@ import { ROUTES } from "../../consts";
 
 
 import style from "./AdminLogin.module.css";
-import Zoom from 'react-reveal/Zoom';
-
 
 import { ReactComponent as ArrowLogo } from "./arrow.svg";
 import { ReactComponent as WachtwoordLogo } from "./wachtwoord.svg";
@@ -20,7 +18,6 @@ const AdminLogin = () => {
   
   return (
     <section className={style.container}>
-      <Zoom>
       <section className={style.content}> 
         <Link className={style.backLink} to={ROUTES.home}>
         <ArrowLogo className={style.backArrow} />
@@ -51,7 +48,6 @@ const AdminLogin = () => {
         </Link>
       </section>
       
-      </Zoom>
       <img src={StartImage} className={style.startImage} alt="Logo" />
       <section className={style.rect}></section>
     </section>

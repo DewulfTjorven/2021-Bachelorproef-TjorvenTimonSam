@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from "prop-types";
 import style from "./Activity.module.css";
 import { useLocation } from "react-router-dom";
 
@@ -41,10 +40,6 @@ const Activiteit = ({ activity }) => {
         </div>
       </section>
   );
-};
-
-Activiteit.propTypes = {
-  activiteit: PropTypes.object.isRequired,
 };
 
 export default Activiteit;

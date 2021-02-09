@@ -21,8 +21,6 @@
   height: 100vh;
 }
 
-
-
 .title {
   composes: title from "styles/typo.module.css";
   color: colorPrimary;

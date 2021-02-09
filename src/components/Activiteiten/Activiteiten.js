@@ -19,6 +19,7 @@ const Activiteiten = () => {
     <div className={style.container}>
           {store.dataStore.activities.map(activity => (
             <Activity
+            key = {activity.title}
             activity={activity}
             />
           ))}
