@@ -47,10 +47,10 @@ function App() {
         </Route>
 
         <Route exact path={ROUTES.hulp}>
-        <section className={style.container}>
-          <Greeting />
-          <Hulp />
-        </section>
+          <section className={style.container}>
+            <Greeting />
+            <Hulp />
+          </section>
         </Route>
 
         <Route exact path={ROUTES.bewoneractiviteiten}>
