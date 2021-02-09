@@ -15,6 +15,7 @@ import Hulp from "./components/Hulp/Hulp";
 
 
 import style from "./App.module.css";
+import Menu from "./components/Menu/Menu";
 
 
 function App() {
@@ -58,6 +59,7 @@ function App() {
         <Route exact path={ROUTES.bewonermenu}>
           <section className={style.container}>
             <Greeting />
+            <Menu/>
           </section>
         </Route>
 
