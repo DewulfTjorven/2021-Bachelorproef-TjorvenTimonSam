@@ -8,6 +8,8 @@
   height: 40rem;
   padding: spacer1;
   margin-right: 3rem;
+  margin-bottom: 3rem;
+  position: relative;
 }
 
 .date{
@@ -68,4 +70,6 @@
 
 .edit{
  height: 8rem;
+ bottom: 2rem;
+ position: absolute;
 }

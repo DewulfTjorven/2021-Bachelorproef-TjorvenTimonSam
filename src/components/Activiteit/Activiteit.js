@@ -1,14 +1,12 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import style from "./Activity.module.css";
 import { useLocation } from "react-router-dom";
+import {storeContext} from"../../index";
+
 
 import { ReactComponent as Location } from "./location.svg";
 import { ReactComponent as Clock } from "./clock.svg";
 import Edit from './edit.png';
-
-
-
-
 
 
 
@@ -17,6 +15,9 @@ import Edit from './edit.png';
 
 
 const Activiteit = ({ activity }) => {
+
+  const store = useContext(storeContext);
+
 
   let location = useLocation();
   console.log(location.pathname);
@@ -29,7 +30,7 @@ const Activiteit = ({ activity }) => {
           <section className={style.ActivityBottom}>
             <p className={style.location}><Location className={style.icon}/>{activity.location}</p>
             <p className={style.time}><Clock className={style.icon}/>{activity.time}</p>
-          </section>
+          </section>          
           
           {location.pathname === "/bewonerinterface/bewoneractiviteiten" ? 
          null : 

@@ -5,6 +5,8 @@ import style from "./Content.module.css";
 
 import Overzicht from "../../components/Overzicht/Overzicht";
 import Activiteiten from "../../components/Activiteiten/Activiteiten";
+import Add from "../../components/Add/Add";
+
 import Menu from "../../components/Menu/Menu";
 import Media from "../../components/Media/Media";
 import Weer from "../../components/Weer/Weer";
@@ -22,6 +24,7 @@ const Content = () => {
       <Switch>
         <Route exact path="/adminpanel/overzicht" component={Overzicht}/>
         <Route exact path="/adminpanel/activiteiten"  component={Activiteiten}/>
+        <Route exact path="/adminpanel/activiteiten/addactiviteiten"  component={Add}/>
         <Route exact path="/adminpanel/menu"  component={Menu}/>
         <Route exact path="/adminpanel/media"  component={Media}/>
         <Route exact path="/adminpanel/weer"  component={Weer}/>

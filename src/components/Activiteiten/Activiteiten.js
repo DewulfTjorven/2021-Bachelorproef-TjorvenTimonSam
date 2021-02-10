@@ -1,5 +1,6 @@
 import React, {useContext} from "react";
 import { useObserver } from "mobx-react-lite";
+import { useLocation } from "react-router-dom";
 
 import {storeContext} from"../../index";
 import Activity from "../Activiteit/Activiteit";
@@ -14,6 +15,8 @@ import { NavLink } from "react-router-dom";
 
 const Activiteiten = () => {
 
+  let location = useLocation();
+  console.log(location.pathname);
   const store = useContext(storeContext);
 
   return useObserver(() => (
@@ -24,9 +27,14 @@ const Activiteiten = () => {
             activity={activity}
             />
           ))}
-          <NavLink className={style.add} to={ROUTES.overzicht}>
+
+          {location.pathname === "/bewonerinterface/bewoneractiviteiten" ? 
+         null : 
+         <NavLink className={style.add} to={ROUTES.addActivity}>
             <Add />
-          </NavLink>
+          </NavLink>}      
+
+          
     </div>
   ));
 };

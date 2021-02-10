@@ -100,7 +100,6 @@ const Overzicht = () => {
           </section>
 
           <img src={NieuwsImage} className={style.Image} alt="Logo" />
-          <Bewerken className={style.bewerkenLogo2}/>
         </Link>
 
 

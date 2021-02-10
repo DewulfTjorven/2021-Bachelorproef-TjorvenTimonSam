@@ -5,6 +5,7 @@
   width: auto;
   height: 80%;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .title {

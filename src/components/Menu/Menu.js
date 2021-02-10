@@ -1,9 +1,13 @@
 import React, { useState } from "react";
 import { useLocation } from "react-router-dom";
-import { Document, Page } from 'react-pdf';
-
-
+import { Document, Page, pdfjs } from "react-pdf";
 import style from "./Menu.module.css";
+
+
+pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
+
+
+
 
 
 const Menu = () => {
