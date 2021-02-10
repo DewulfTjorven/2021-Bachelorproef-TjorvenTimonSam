@@ -4,13 +4,27 @@ import { ReactComponent as Help } from "./help.svg";
 import { ROUTES } from "../../consts";
 
 import style from "./Greeting.module.css";
+import { useObserver } from "mobx-react-lite";
 
 const Greeting = () => {
-
+  
   const location = useLocation();
   console.log(location.pathname)
+  
+  // let myVar = setInterval(function() {
+  //   myTimer();
+  // }, 1000);
+  
+  // function myTimer() {
+  //   let d = new Date();
+  // }
 
-  return (
+  let time = new Date();
+  let clock = ("0" + time.getHours()).slice(-2) + ':' + ("0" + time.getMinutes()).slice(-2);
+  let date = ("0" + time.getDate()).slice(-2) + ' / ' + ("0" + (time.getMonth() + 1)).slice(-2) + ' / ' + time.getFullYear();
+
+  
+  return useObserver(() => (
     <section className={style.contentHeader}>
       <section className={style.contentGreeting}>
         <h3 className={style.title__small}>Goeiedag</h3>
@@ -36,10 +50,11 @@ const Greeting = () => {
       </section>
       
       <section className={style.contentGreeting}>
-        <h3 className={style.clock}>14:22</h3>
+        <h3 className={style.clock}>{clock}</h3>
+        <p>{date}</p>
       </section>
     </section>
-  );
+  ));
 };
 
 export default Greeting;

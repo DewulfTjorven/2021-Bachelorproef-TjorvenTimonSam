@@ -15,6 +15,7 @@ import Hulp from "./components/Hulp/Hulp";
 
 
 import style from "./App.module.css";
+import Menu from "./components/Menu/Menu";
 
 
 function App() {
@@ -42,10 +43,10 @@ function App() {
         </Route>
 
         <Route exact path={ROUTES.hulp}>
-        <section className={style.container}>
-          <Greeting />
-          <Hulp />
-        </section>
+          <section className={style.container}>
+            <Greeting />
+            <Hulp />
+          </section>
         </Route>
 
         <Route exact path={ROUTES.bewoneractiviteiten}>
@@ -58,6 +59,7 @@ function App() {
         <Route exact path={ROUTES.bewonermenu}>
           <section className={style.container}>
             <Greeting />
+            <Menu/>
           </section>
         </Route>
 
