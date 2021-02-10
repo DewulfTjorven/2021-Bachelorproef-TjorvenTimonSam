@@ -16,6 +16,7 @@ import Hulp from "./components/Hulp/Hulp";
 
 import style from "./App.module.css";
 import Menu from "./components/Menu/Menu";
+import Signaal from "./components/Signaal/Signaal";
 
 
 function App() {
@@ -78,6 +79,7 @@ function App() {
         <Route exact path={ROUTES.bewonersignaal}>
           <section className={style.container}>
             <Greeting />
+            <Signaal/>
           </section>
         </Route>
 
