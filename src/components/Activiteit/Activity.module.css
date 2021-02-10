@@ -5,8 +5,9 @@
   background-color: colorGrey;
   border-radius: borderRadius;
   width: 28rem;
-  height: auto;
+  height: 40rem;
   padding: spacer1;
+  margin-right: 3rem;
 }
 
 .date{

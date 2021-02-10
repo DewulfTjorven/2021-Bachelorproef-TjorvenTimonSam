@@ -26,8 +26,13 @@
 .clock {
   composes: title from "../../styles/typo.module.css";
   color: darkPrimary;
+  text-align: right;
 }
 
 .button {
   composes: button from "../../styles/layouts.module.css";
+}
+
+.contentGreeting{
+  width: 30rem;
 }

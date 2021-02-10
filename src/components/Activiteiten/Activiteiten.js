@@ -3,11 +3,12 @@ import { useObserver } from "mobx-react-lite";
 
 import {storeContext} from"../../index";
 import Activity from "../Activiteit/Activiteit";
-
-
+import { ReactComponent as Add } from "./add.svg";
+import { ROUTES } from "../../consts";
 
 
 import style from "./Activiteiten.module.css";
+import { NavLink } from "react-router-dom";
 
 
 
@@ -23,6 +24,9 @@ const Activiteiten = () => {
             activity={activity}
             />
           ))}
+          <NavLink className={style.add} to={ROUTES.overzicht}>
+            <Add />
+          </NavLink>
     </div>
   ));
 };
