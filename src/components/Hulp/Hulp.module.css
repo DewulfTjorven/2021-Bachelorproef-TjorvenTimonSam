@@ -5,7 +5,7 @@
   position: relative; /* could be absolute if needed */
   left: 1px;
   width: 60vw;
-  height: auto;
+  height: 100%;
 }
 
 .helper__container {

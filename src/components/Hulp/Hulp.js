@@ -10,7 +10,7 @@ const Hulp = () => {
       return (
         <section className={style.helper__container}>
           <div className={style.helper__wrapper}>
-            <h1 className={style.helper__title}>Het inlogproces</h1>
+            <h1 className={style.helper__title}>Het overzicht</h1>
             <div className={style.video__card}>
             <video className={style.video} width="765" height="550" controls loop autoplay="autoPlay" controlsList="nodownload" disablePictureInPicture>
               {<source src={video} type="video/mp4"/>}
