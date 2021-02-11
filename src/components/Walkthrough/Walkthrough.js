@@ -82,7 +82,7 @@ const Walkthrough = () => {
           <div className={style.walkthrough__text}>     
             <h1 className={style.title}>4. Hulp in één klik</h1>
             <p className={style.walkthrough__p}>Kijk elke week naar wat er te doen valt van activiteiten, en zie wie van de andere bewoners ook aanwezig zijn.</p>
-            <img alt="helper" src={img4} className={style.helper__img}></img>
+            <img alt="helper" src={img4} className={style.step__img}></img>
           </div>
 
         :
