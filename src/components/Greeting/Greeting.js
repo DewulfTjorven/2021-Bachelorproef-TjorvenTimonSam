@@ -22,23 +22,24 @@ const Greeting = () => {
   console.log(location.pathname)
 
   //clock
-  var timer = setInterval(showclock, 100);
-  function showclock() {
-    var d = new Date();
-    var time = d.toLocaleTimeString();
-    document.getElementById('result').innerHTML = time;
-  }
-  var timer = setInterval(showclock, 100);
+  // var timer = setInterval(showclock, 100);
+  // function showclock() {
+  //   var d = new Date();
+  //   var time = d.toLocaleTimeString();
+  //   document.getElementById('result').innerHTML = time;
+  // }
+  // var timer = setInterval(showclock, 100);
 
   //date
   let time = new Date();
   let date = ("0" + time.getDate()).slice(-2) + ' / ' + ("0" + (time.getMonth() + 1)).slice(-2) + ' / ' + time.getFullYear();
-  // let clock = ("0" + time.getHours()).slice(-2) + ':' + ("0" + time.getMinutes()).slice(-2);
+  let clock = ("0" + time.getHours()).slice(-2) + ':' + ("0" + time.getMinutes()).slice(-2);
 
 
   return useObserver(() => (
     <>
-      {location.pathname === "/bewonerinterface" ? null
+      {location.pathname === "/bewonerinterface"
+      || location.pathname === "/adminpanel/overzicht" ? null
         :
         <button className={style.button + " " + style.backButton} type="button" onClick={handleClick}>
           <Arrow />
@@ -78,7 +79,7 @@ const Greeting = () => {
         </section>
 
         <section className={style.contentGreeting}>
-          <h3 id='result'className={style.clock}></h3>
+          <h3 className={style.clock}>{clock}</h3>
           <p className={style.date}>{date}</p>
         </section>
       </section>

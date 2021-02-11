@@ -91,7 +91,6 @@ function App() {
 
         <Route exact path={ROUTES.adminlogin}>
           <section className={style.container}>
-            <Greeting />
             <AdminLogin />
           </section>
         </Route>
