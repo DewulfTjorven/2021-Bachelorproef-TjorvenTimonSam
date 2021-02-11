@@ -37,7 +37,15 @@ const BewonerLogin = () => {
           <label className={style.inputLabel}><WachtwoordLogo className={style.inputIcon} /> Wachtwoord</label>
           <input className={style.input} type="text" placeholder="MijnWachtwoord01"></input>
         </section>
+        {/*
         <Link className={style.startOption} to={ROUTES.bewonerinterface}>
+          <button className={style.button}>
+            <p>Inloggen</p>
+          </button>
+        </Link>
+        */}
+
+        <Link className={style.startOption} to={ROUTES.walkthrough}>
           <button className={style.button}>
             <p>Inloggen</p>
           </button>

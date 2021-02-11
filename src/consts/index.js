@@ -19,6 +19,7 @@ const ROUTES = {
   bewonerweer: "/bewonerinterface/bewonerweer",
   bewonernieuws: "/bewonerinterface/bewonernieuws",
   bewonersignaal: "/bewonerinterface/bewonersignaal",
+  walkthrough: "/walkthrough",
   hulp: "/hulp",
 
 };

@@ -1,21 +1,24 @@
 import React from "react";
-// import { useLocation } from "react-router-dom";
-
-
 import style from "./Hulp.module.css";
-// import React, { Component } from 'react'
-import video from './INLOGPROCEDURE.mp4'
+import video from './INLOGPROCEDURE.mp4';
+import helper__img from './StartImage.png';
 
 
 const Hulp = () => { 
   // const location = useLocation();
   // console.log(location.pathname)
       return (
-        <div>
-          <video className={style.video} controls loop>
-            {<source src={video} type="video/mp4"/>}
-          </video>
-        </div>
+        <section className={style.helper__container}>
+          <div className={style.helper__wrapper}>
+            <h1 className={style.helper__title}>Het inlogproces</h1>
+            <div className={style.video__card}>
+            <video className={style.video} width="765" height="550" controls muted loop autoplay="autoPlay" controlsList="nodownload" disablePictureInPicture>
+              {<source src={video} type="video/mp4"/>}
+            </video>           
+            </div>
+          </div>
+          <img className={style.helper__img} src={helper__img} alt="helper" width="500"></img>
+        </section>
       );
 };
 

@@ -12,6 +12,8 @@ import Layout from "./containers/Layout/Layout";
 import Greeting from "./components/Greeting/Greeting";
 import Activiteiten from "./components/Activiteiten/Activiteiten";
 import Hulp from "./components/Hulp/Hulp";
+import Walkthrough from "./components/Walkthrough/Walkthrough";
+
 
 
 import style from "./App.module.css";
@@ -32,6 +34,12 @@ function App() {
             <StartHeader />
             <BewonerLogin />
           </section>
+        </Route>
+
+        <Route exact path={ROUTES.walkthrough}>
+        <section className={style.container}>
+          <Walkthrough />
+        </section>
         </Route>
 
         <Route exact path={ROUTES.bewonerinterface}>
