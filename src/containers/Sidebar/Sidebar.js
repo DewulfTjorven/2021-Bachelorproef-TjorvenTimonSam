@@ -13,7 +13,7 @@ import { ReactComponent as UserlistLogo } from "./userlist.svg";
 import { ReactComponent as UitloggenLogo } from "./uitloggen.svg";
 
 
-
+import logo from "./logo.svg";
 import style from "./Sidebar.module.css";
 
 const Sidebar = () => {
@@ -24,7 +24,7 @@ const Sidebar = () => {
   return (
     <section className={style.container}>
       <header className={style.header}>
-        <h2 className={style.title}>Heilig Hart</h2>
+        <img className={style.logo} alt="logo" src={logo}></img>
       </header>
       <section className={style.navigation}>
         

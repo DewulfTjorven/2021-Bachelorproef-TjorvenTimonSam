@@ -9,6 +9,10 @@
   justify-content: space-between;
 }
 
+.logo {
+  width: 20rem;
+}
+
 .title {
   composes: title from "../../styles/typo.module.css";
   color: colorPrimary;

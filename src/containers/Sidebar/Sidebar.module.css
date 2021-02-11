@@ -11,6 +11,11 @@
   padding: calc(spacer1 / 2);
 }
 
+.logo {
+  margin-top: 2rem;
+  width: 90%;
+}
+
 .title {
   composes: title from "../../styles/typo.module.css";
   color: colorPrimary;
