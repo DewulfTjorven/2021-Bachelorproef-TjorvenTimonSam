@@ -14,6 +14,7 @@ import Activiteiten from "./components/Activiteiten/Activiteiten";
 import Hulp from "./components/Hulp/Hulp";
 import Walkthrough from "./components/Walkthrough/Walkthrough";
 import Nieuws from "./components/Nieuws/Nieuws";
+import ChooseUser from "./components/ChooseUser/ChooseUser";
 
 
 
@@ -57,6 +58,13 @@ function App() {
           <section className={style.container}>
             <Greeting />
             <Hulp />
+          </section>
+        </Route>
+
+        <Route exact path={ROUTES.chooseuser}>
+          <section className={style.container}>
+            <Greeting />
+            <ChooseUser />
           </section>
         </Route>
 

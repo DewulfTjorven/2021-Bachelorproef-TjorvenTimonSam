@@ -22,6 +22,7 @@ const ROUTES = {
   bewonersignaal: "/bewonerinterface/bewonersignaal",
   walkthrough: "/walkthrough",
   hulp: "/hulp",
+  chooseuser: "/chooseuser",
 
 };
 
