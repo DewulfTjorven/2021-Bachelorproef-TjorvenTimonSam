@@ -36,3 +36,15 @@
 .contentGreeting{
   width: 30rem;
 }
+
+.date {
+  text-align: right;
+  font-weight: bold;
+  color: rgb(60, 62, 75);
+}
+
+.backButton {
+  position: absolute;
+  background-color: rgb(60, 62, 75);
+  box-shadow: none;
+}

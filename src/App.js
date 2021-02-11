@@ -51,10 +51,10 @@ function App() {
         </Route>
 
         <Route exact path={ROUTES.bewoneractiviteiten}>
-          <section className={style.container}>
-            <Greeting />
-            <Activiteiten />
-          </section>
+            <section className={style.container + " " + style.greyBackground}>
+              <Greeting />
+              <Activiteiten />
+            </section>
         </Route>
 
         <Route exact path={ROUTES.bewonermenu}>
