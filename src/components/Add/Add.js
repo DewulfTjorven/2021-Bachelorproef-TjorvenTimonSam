@@ -6,7 +6,6 @@ import { ROUTES } from "../../consts";
 
 
 import style from "./Add.module.css";
-import { NavLink } from "react-router-dom";
 import Activity from "../../models/Activity";
 
 import ActivityImage from './ActivityImage.png';
@@ -24,6 +23,7 @@ const Add = () => {
   const [description, setDescription] = useState("");
   const [location, setLocation] = useState("");
   const [time, setTime] = useState("");
+
 
 
   const handleFormSubmit = e => {
@@ -51,25 +51,26 @@ const Add = () => {
     <form className={style.form} onSubmit={handleFormSubmit} >
 
       <label htmlFor="title" className={style.title}>
-        Title
-      <input type="text" name="content" id="content" className="form__input" value={title} placeholder="vb. Ping Pong"
+        <section className={style.label}>Title<p className={style.error}></p></section>
+        
+      <input type="text" name="content" id="content" className="form__input" value={title} placeholder="vb. Ping Pong" min="5" max="12"
           onChange={e => setTitle(e.currentTarget.value)} />
       </label>
 
       <label htmlFor="location" className={style.locatie}>
-        Locatie
+      <section className={style.label}>Locatie<p className={style.error}></p></section>
       <input type="text" name="content" id="content" className="form__input" value={location} placeholder="vb. Floor 2"
           onChange={e => setLocation(e.currentTarget.value)} />
       </label>
 
       <label htmlFor="description" className={style.beschrijving}>
-        Beschrijving
+      <section className={style.label}>Beschrijving<p className={style.error}></p></section>
       <textarea type="text" name="content" id="content" className="form__input" value={description} placeholder="Trek allemaal sportieve kledij aan! We maken er een zeer leuke dag van."
           onChange={e => setDescription(e.currentTarget.value)} />
       </label>
 
       <label htmlFor="date" className={style.datum}>
-        Datum & Tijd
+      <section className={style.labelDate}>Datum & Tijd<p className={style.errorDate}></p></section>
       <section>
         <input type="date" name="user" id="user" className="form__input" value={date} className={style.da}
             onChange={e => setDate(e.currentTarget.value)} />
@@ -78,8 +79,10 @@ const Add = () => {
             onChange={e => setTime(e.currentTarget.value)} />
       </section>
       </label>
-
-      <button type="submit" value="Create Post" className={style.button}>Voeg toe</button>
+      {/* <NavLink to={ROUTES.activiteiten}> */}
+        <button type="submit" value="Create Post" className={style.button} to={ROUTES.activiteiten}>Voeg toe</button>
+      {/* </NavLink> */}
+      
     </form >
     </>
     
