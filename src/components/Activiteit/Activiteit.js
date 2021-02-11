@@ -1,4 +1,4 @@
-import React, {useContext} from 'react';
+import React, {useContext, useState} from 'react';
 import style from "./Activity.module.css";
 import { useLocation } from "react-router-dom";
 import {storeContext} from"../../index";
@@ -17,10 +17,16 @@ import Edit from './edit.png';
 const Activiteit = ({ activity }) => {
 
   const store = useContext(storeContext);
+  const [isActive, setActive] = useState("true"); 
 
 
   let location = useLocation();
   console.log(location.pathname);
+
+  const handleToggle = () => {
+    setActive(!isActive);
+  };
+
   return (
     <section className={style.navlink} activity={activity}>
       <div className={style.activity}>
@@ -37,6 +43,16 @@ const Activiteit = ({ activity }) => {
          <section className={style.imageContainer}>
           <img src={Edit} className={style.edit} alt="Logo" />
          </section>}
+
+         {location.pathname === "/bewonerinterface/bewoneractiviteiten" ? <section className={style.imageContainer}>
+         <button className={style.button} 
+         className={isActive ? style.button : style.buttonActive}
+         onClick={handleToggle}>
+            <p>{isActive ? "Ik Kom!" : "Ik Kom niet meer"}</p>
+          </button>
+         </section> 
+          : null
+         }
           
         </div>
       </section>

@@ -28,9 +28,6 @@ const Activiteiten = () => {
           activity={activity}
         />
       ))}
-      <div>
-        <img className={style.character} src={character} alt="loading..."/>
-      </div>
       {
       location.pathname === "/bewonerinterface/bewoneractiviteiten" ?
         null :
@@ -40,8 +37,11 @@ const Activiteiten = () => {
         
         }
 
-
+      <div>
+        <img className={style.character} src={character} alt="loading..."/>
+      </div>
     </div>
+    
   ));
 };
 
