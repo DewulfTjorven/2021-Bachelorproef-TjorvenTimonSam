@@ -29,3 +29,7 @@
 .button {
   composes: button from "styles/layouts.module.css";
 }
+
+.greyBackground {
+  background-color: rgb(251, 251, 251);
+}

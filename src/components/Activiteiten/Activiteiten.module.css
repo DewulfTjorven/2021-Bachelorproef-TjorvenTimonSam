@@ -1,9 +1,11 @@
 @value tokens: "../../styles/tokens.module.css";
-@value colorPrimary, darkPrimary, fontSizeMedium, background, spacer1, borderRadius from tokens;
+@value colorPrimary, colorGrey,  darkPrimary, fontSizeMedium, background, spacer1, borderRadius from tokens;
 
 .container{
   width: auto;
   height: 80%;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .title {
@@ -14,4 +16,22 @@
 
 .button {
   composes: button from "../../styles/layouts.module.css";
+}
+
+.add{
+  border-radius: borderRadius;
+  width: 28rem;
+  height: 40rem;
+  padding: spacer1;
+  border: 2px dotted rgba(22, 22, 22, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.character {
+  position: absolute;
+  right: -10rem;
+  bottom: 0;
+  width: 40%;
 }

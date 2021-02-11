@@ -5,8 +5,11 @@
   background-color: colorGrey;
   border-radius: borderRadius;
   width: 28rem;
-  height: auto;
+  height: 40rem;
   padding: spacer1;
+  margin-right: 3rem;
+  margin-bottom: 3rem;
+  position: relative;
 }
 
 .date{
@@ -67,4 +70,24 @@
 
 .edit{
  height: 8rem;
+ bottom: 2rem;
+ position: absolute;
+}
+
+.button {
+  composes: button from "../../styles/layouts.module.css";
+}
+
+.buttonActive{
+  width: 24rem;
+  font-size: fontSizeSmall;
+  font-weight: bold;
+  padding: calc(spacer1/2);
+  border-radius: borderRadius;
+  color: colorPrimary;
+  border: 2px solid colorPrimary;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-sizing: border-box;
 }

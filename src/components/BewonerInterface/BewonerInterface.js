@@ -91,6 +91,10 @@ const BewonerInterface = () => {
           <img src={NieuwsImage} className={style.Image} alt="Logo" />
         </Link>
 
+        <Link className={style.logout} to={ROUTES.home}>
+          <p className={style.navText}>Uitloggen</p>
+        </Link>
+
 
       </section>
   );

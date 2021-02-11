@@ -6,6 +6,7 @@ const ROUTES = {
   adminpanel: "/adminpanel/overzicht",
   overzicht: "/adminpanel/overzicht",
   activiteiten: "/adminpanel/activiteiten",
+  addActivity: "/adminpanel/activiteiten/addactiviteiten",
   menu: "/adminpanel/menu",
   media: "/adminpanel/media",
   weer: "/adminpanel/weer",

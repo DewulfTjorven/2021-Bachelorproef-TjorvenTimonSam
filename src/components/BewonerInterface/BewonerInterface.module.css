@@ -190,6 +190,16 @@
   font-weight: bold;
 }
 
+.logout{
+  position: absolute;
+  top: 3rem;
+  right: 3rem;
+  color: darkPrimary;
+  font-weight: bold;
+  opacity: 0.75;;
+
+}
+
 
 
 @media only screen and (max-width: 1370px) {

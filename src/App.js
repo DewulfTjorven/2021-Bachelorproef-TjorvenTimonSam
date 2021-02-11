@@ -17,6 +17,8 @@ import Walkthrough from "./components/Walkthrough/Walkthrough";
 
 
 import style from "./App.module.css";
+import Menu from "./components/Menu/Menu";
+import Signaal from "./components/Signaal/Signaal";
 
 
 function App() {
@@ -57,15 +59,16 @@ function App() {
         </Route>
 
         <Route exact path={ROUTES.bewoneractiviteiten}>
-          <section className={style.container}>
-            <Greeting />
-            <Activiteiten />
-          </section>
+            <section className={style.container + " " + style.greyBackground}>
+              <Greeting />
+              <Activiteiten />
+            </section>
         </Route>
 
         <Route exact path={ROUTES.bewonermenu}>
           <section className={style.container}>
             <Greeting />
+            <Menu/>
           </section>
         </Route>
 
@@ -84,6 +87,7 @@ function App() {
         <Route exact path={ROUTES.bewonersignaal}>
           <section className={style.container}>
             <Greeting />
+            <Signaal/>
           </section>
         </Route>
 
@@ -95,7 +99,6 @@ function App() {
 
         <Route exact path={ROUTES.adminlogin}>
           <section className={style.container}>
-            <Greeting />
             <AdminLogin />
           </section>
         </Route>

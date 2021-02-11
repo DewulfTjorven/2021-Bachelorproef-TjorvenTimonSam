@@ -11,6 +11,7 @@ class Activity {
     this.time = time;
   }
 
+
 }
 
 decorate(Activity, {
