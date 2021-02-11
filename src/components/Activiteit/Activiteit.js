@@ -1,7 +1,6 @@
-import React, {useContext, useState} from 'react';
+import React, {useState} from 'react';
 import style from "./Activity.module.css";
 import { useLocation } from "react-router-dom";
-import {storeContext} from"../../index";
 
 
 import { ReactComponent as Location } from "./location.svg";
@@ -16,7 +15,6 @@ import Edit from './edit.png';
 
 const Activiteit = ({ activity }) => {
 
-  const store = useContext(storeContext);
   const [isActive, setActive] = useState("true"); 
 
 

@@ -13,6 +13,8 @@ import Greeting from "./components/Greeting/Greeting";
 import Activiteiten from "./components/Activiteiten/Activiteiten";
 import Hulp from "./components/Hulp/Hulp";
 import Walkthrough from "./components/Walkthrough/Walkthrough";
+import Nieuws from "./components/Nieuws/Nieuws";
+
 
 
 
@@ -94,6 +96,8 @@ function App() {
         <Route exact path={ROUTES.bewonernieuws}>
           <section className={style.container}>
             <Greeting />
+            <Nieuws />
+
           </section>
         </Route>
 

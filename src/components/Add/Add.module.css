@@ -15,6 +15,29 @@ label{
   color: darkPrimary;
 }
 
+.label{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.labelDate{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.error{
+  padding-left: 2rem;
+  color: red;
+}
+
+.errorDate{
+  padding-left: 2rem;
+  color: red;
+}
+
 .title{
   width: 100%;
   display: flex;

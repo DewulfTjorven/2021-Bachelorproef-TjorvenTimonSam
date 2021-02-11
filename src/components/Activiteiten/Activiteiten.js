@@ -5,7 +5,6 @@ import { useLocation } from "react-router-dom";
 import { storeContext } from "../../index";
 import Activity from "../Activiteit/Activiteit";
 import { ReactComponent as Add } from "./add.svg";
-import character from "./character2_waveFrame_1.gif";
 import { ROUTES } from "../../consts";
 
 
@@ -35,7 +34,7 @@ const Activiteiten = () => {
           <Add />
         </NavLink>
         
-        }
+      }
     </div>
     
   ));
