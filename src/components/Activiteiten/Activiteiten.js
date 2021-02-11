@@ -32,7 +32,9 @@ const Activiteiten = () => {
          null : 
          <NavLink className={style.add} to={ROUTES.addActivity}>
             <Add />
-          </NavLink>}      
+          </NavLink>}
+
+          
 
           
     </div>
