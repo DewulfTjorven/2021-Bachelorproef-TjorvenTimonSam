@@ -36,10 +36,6 @@ const Activiteiten = () => {
         </NavLink>
         
         }
-
-      <div>
-        <img className={style.character} src={character} alt="loading..."/>
-      </div>
     </div>
     
   ));

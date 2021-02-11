@@ -28,10 +28,3 @@
   justify-content: center;
   align-items: center;
 }
-
-.character {
-  position: absolute;
-  right: -10rem;
-  bottom: 0;
-  width: 40%;
-}
