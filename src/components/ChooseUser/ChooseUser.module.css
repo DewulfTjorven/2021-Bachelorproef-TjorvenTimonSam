@@ -1,0 +1,75 @@
+@value tokens: "../../styles/tokens.module.css";
+@value colorPrimary, darkPrimary, colorOrange, fontSizeMedium, colorGrey,fontSizeSmall, background, spacer1, borderRadius from tokens;
+
+.link {
+  text-decoration: none;
+  color: darkPrimary;
+}
+
+.link:hover {
+  transform: scale(1.2);
+}
+
+.choose__container {
+  height: 75vh;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.choose__wrapper{
+  background-color: red;
+  height: 70vh;
+  width: 27.5vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 1rem;
+  background-color: colorGrey;
+  color: darkPrimary;
+}
+
+.helper__wrapper{
+  background-color: green;
+  height: 60vh;
+  width: 27.5vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 1rem;
+  background-color: colorOrange;
+  padding: 2rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.helper__name {
+  font-size: fontSizeMedium;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+.praatsnelheid {
+  text-transform: capitalize;
+  padding: 3rem;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.traag {
+  color: colorPrimary;
+}
+
+.snel {
+  color: red;
+}
+
+.helper__img {
+  position: absolute;
+  height: 50vh;
+  bottom: 0;
+
+}

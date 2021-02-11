@@ -87,15 +87,10 @@ const Walkthrough = () => {
 
         :
         <p className={style.hidden}></p>
+        
         }
-
-
-
-
-
-
-
-          <div>
+    
+          <div className={style.video__wrapper}>          
 
           {step === 1 ? 
                 <video className={style.video} loop muted autoPlay >             
@@ -257,7 +252,7 @@ const Walkthrough = () => {
           
         }}><p>volgende</p></button> :
         <div> 
-          <Link to={ROUTES.bewonerinterface}>
+          <Link to={ROUTES.chooseuser}>
           <button className={style.button}>volgende</button>
           </Link>
         </div>
@@ -265,6 +260,7 @@ const Walkthrough = () => {
         </div>
 
       </section>
+      
   ));
 };
 

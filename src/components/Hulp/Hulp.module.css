@@ -4,8 +4,16 @@
 .video { 
   position: relative; /* could be absolute if needed */
   left: 1px;
-  width: auto;
-  height: 50vw;
+  width: 60vw;
+  height: auto;
+}
+
+.helper__container {
+  height: 80vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 60vw;
 }
 
 .helper__wrapper {
@@ -21,6 +29,7 @@
   /* box-shadow: 0 0 1rem colorOrange; */
   border: .5rem solid colorPrimary;
   overflow: hidden;
+  height: 80%;
 }
 
 .helper__img {
